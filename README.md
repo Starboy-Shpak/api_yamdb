@@ -1,32 +1,39 @@
-# Проект YaMDb
-### Описание
-Проект YaMDb собирает отзывы и оценки пользователей на книги, фильмы, музыку. На основании оценок строится рейтинг произведения.
+
+# API_YAMDB
+
+REST API проект для сервиса YAMDB — платформа для сбора отзывов о фильмах, книгах, музыке и чего угодно еще.
+
+## Что проект умеет?
+
+YAMDB собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка» и т.д. Список категорий можно расширить.
+
 ### Технологии
 Python, DRF, JWT
+
 ### Как запустить проект:
 - Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone https://github.com/AlexandrPthn/api_yamdb.git
+git clone git@github.com:Starboy-Shpak/api_yamdb.git
 cd api_yamdb/
 ``` 
 - Cоздать и активировать виртуальное окружение:
 ```
-python3 -m venv env
+python -m venv env
 source env/Scripts/activate
 ``` 
 - Установить зависимости из файла requirements.txt:
 ```
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ``` 
 - Перейти в каталог и выполнить миграции:
 ```
 cd api_yamdb/
-python3 manage.py migrate
+python manage.py migrate
 ``` 
 - Запустить проект:
 ```
-python3 manage.py runserver
+python manage.py runserver
 ``` 
 ### REST API
 REST API для примера описан ниже.
@@ -677,7 +684,9 @@ application/json
   "role": "user"
 }
 ```
-### Автор
+### Команда разработчиков:
 Кокушин Александр
 Остапюк Ярослав
 Шпак Вадим
+---
+Автор: Вадим Шпак. Связаться со мной можно в [телеграм](https://t.me/starboy_shpak/)
